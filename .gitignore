@@ -25,17 +25,14 @@ ai-services/.env
 !**/.env.example
 !**/.env.local.example
 
-# Uploaded files & user data
-**/uploads/**/*
+# Uploaded files & user data - ignore all files but keep directories
 backend/src/uploads/cccd/*
 backend/src/uploads/faces/*
 ai-services/uploads/cccd/*
-ai-services/uploads/faces/*
 
-# Keep upload directories but not contents
-!**/uploads/.gitkeep
+# Keep upload directories by allowing .gitkeep files
 !backend/src/uploads/cccd/.gitkeep
-!backend/src/uploads/faces/.gitkeep
+!backend/src/uploads/faces/.gitkeep  
 !ai-services/uploads/cccd/.gitkeep
 
 # Database & cache files
